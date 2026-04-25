@@ -36,7 +36,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
 } from "@/components/ui/dropdown-menu";
-import { PRESETS, TAXONOMY, type FailureTag, type StepKind } from "@/data/presets";
+import { PRESETS, TAXONOMY, type StepKind } from "@/data/presets";
 import { getCategoryCounts, getPreset, useLabStore } from "@/store/labStore";
 
 const STEP_LABELS: Record<StepKind, { label: string; tone: string }> = {
