@@ -327,7 +327,7 @@ function RunViewer() {
           </CardTitle>
         </CardHeader>
         <CardContent className="pt-0">
-          <ScrollArea className="max-h-[180px]">
+          <ScrollArea className="h-[320px]">
             <div className="space-y-1 pr-2">
               {preset.runs.map((r) => {
                 const active = r.id === run.id;
