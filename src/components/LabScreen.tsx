@@ -9,6 +9,7 @@ import {
   Info,
   AlertCircle,
   Lightbulb,
+  Wrench,
 } from "lucide-react";
 import { AppShell } from "@/components/AppShell";
 import { Button } from "@/components/ui/button";
