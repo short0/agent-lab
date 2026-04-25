@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Agent Error Analysis Lab" },
+      { name: "description", content: "Agent Error Analysis Lab is a web app for inspecting, categorizing, and prioritizing agent workflow failures." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Agent Error Analysis Lab" },
+      { property: "og:description", content: "Agent Error Analysis Lab is a web app for inspecting, categorizing, and prioritizing agent workflow failures." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Agent Error Analysis Lab" },
+      { name: "twitter:description", content: "Agent Error Analysis Lab is a web app for inspecting, categorizing, and prioritizing agent workflow failures." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/53aaa0b6-130c-4450-8934-b93cbedb25ef/id-preview-bdb78f6f--65da3b1e-7224-4fbe-a46b-94a22c7f9b67.lovable.app-1777098027436.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/53aaa0b6-130c-4450-8934-b93cbedb25ef/id-preview-bdb78f6f--65da3b1e-7224-4fbe-a46b-94a22c7f9b67.lovable.app-1777098027436.png" },
     ],
     links: [
       {
