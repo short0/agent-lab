@@ -619,8 +619,3 @@ function AnalysisPanel() {
     </div>
   );
 }
-
-// local Wrench icon import (avoid duplicate) — re-export from lucide
-import { Wrench } from "lucide-react";
-// satisfy linter for unused FailureTag import
-export type _Tag = FailureTag;
