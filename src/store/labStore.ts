@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { PRESETS, TAXONOMY, type FailureTag, type Preset } from "@/data/presets";
+import { PRESETS, SEVERITY, type FailureTag, type Preset } from "@/data/presets";
 
 export type Mode = "simulated" | "live";
 export type Theme = "light" | "dark";
@@ -289,10 +289,7 @@ export function getCategoryCounts(
     for (const t of all) counts[t] = (counts[t] ?? 0) + 1;
   }
   const entries = Object.entries(counts).map(([tag, count]) => {
-    const sev = (TAXONOMY as readonly string[]).includes(tag)
-      ? // @ts-expect-error indexed
-        (require("@/data/presets").SEVERITY[tag] as number) ?? 0.5
-      : 0.5;
+    const sev = (SEVERITY as Record<string, number>)[tag] ?? 0.5;
     return { tag, count, impact: Math.round(count * sev * 100) / 100 };
   });
   return entries.sort((a, b) => b.impact - a.impact);
